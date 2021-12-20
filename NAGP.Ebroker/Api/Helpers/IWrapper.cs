@@ -10,9 +10,5 @@ namespace Api.Helpers
     {
         public bool IsValidDayTime(DateTime dateTime);
 
-        public IHost DataBaseMigrate()
-        {
-
-        }
     }
 }
