@@ -1,0 +1,12 @@
+version: '3.4'
+
+services: 
+  ebrokerdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: ebrokerdb
+    environment:
+        SA_PASSWORD: "SwN12345678"
+        ACCEPT_EULA: "Y"
+    restart: always
+    ports:
+        - "1433:1433"
